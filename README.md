@@ -25,8 +25,8 @@ No bugs have been found or reported. Please contact the author if you experience
 
 Future goals for __Word Nerds__:
 1. Log volunteer hours worked
-2. 
-3. 
+2. Show volunteer profile
+3. Alert user if volunteer hours overlap
 
 ### __License__
 This software is licensed under the [BSD license](license.txt).
