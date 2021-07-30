@@ -28,3 +28,17 @@ describe('update a project title', {:type => :feature}) do
     expect(page).to have_content('Stank Retriever')
   end
 end
+
+describe('delete a project', {:type => :feature}) do
+  it('goes to the edit page and deletes the project') do
+    visit('/')
+    visit('/projects')
+    click_on('Add a new project')
+    fill_in('project_title', :with => 'Stink Removal')
+    click_on('Add project')
+    click_on('Stink Removal')
+    click_on('Stink Removal')
+    click_on('Delete project')
+    expect(page).to have_no_content('Stink Removal')
+  end
+end
