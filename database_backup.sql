@@ -60,7 +60,8 @@ ALTER SEQUENCE public.projects_id_seq OWNED BY public.projects.id;
 
 CREATE TABLE public.volunteers (
     name character varying,
-    id integer NOT NULL
+    id integer NOT NULL,
+    project_id integer
 );
 
 
@@ -114,7 +115,7 @@ COPY public.projects (title, id) FROM stdin;
 -- Data for Name: volunteers; Type: TABLE DATA; Schema: public; Owner: redux
 --
 
-COPY public.volunteers (name, id) FROM stdin;
+COPY public.volunteers (name, id, project_id) FROM stdin;
 \.
 
 
@@ -122,14 +123,14 @@ COPY public.volunteers (name, id) FROM stdin;
 -- Name: projects_id_seq; Type: SEQUENCE SET; Schema: public; Owner: redux
 --
 
-SELECT pg_catalog.setval('public.projects_id_seq', 1, false);
+SELECT pg_catalog.setval('public.projects_id_seq', 193, true);
 
 
 --
 -- Name: volunteers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: redux
 --
 
-SELECT pg_catalog.setval('public.volunteers_id_seq', 1, false);
+SELECT pg_catalog.setval('public.volunteers_id_seq', 67, true);
 
 
 --
