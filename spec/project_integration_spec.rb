@@ -9,7 +9,7 @@ describe('create a project path', {:type => :feature}) do
     visit('/projects')
     click_on('add a new project')
     fill_in('project_title', :with => 'Stink Removal')
-    click_on('Add project')
+    click_on('Add Project')
     expect(page).to have_content('Stink Removal')
   end
 end
@@ -20,7 +20,7 @@ describe('update a project title', {:type => :feature}) do
     visit('/projects')
     click_on('add a new project')
     fill_in('project_title', :with => 'Stink Removal')
-    click_on('Add project')
+    click_on('Add Project')
     click_on('add volunteers')
     click_on('Stink Removal')
     fill_in('title', :with => 'Stank Retriever')
@@ -35,7 +35,7 @@ describe('delete a project', {:type => :feature}) do
     visit('/projects')
     click_on('add a new project')
     fill_in('project_title', :with => 'Stink Removal')
-    click_on('Add project')
+    click_on('Add Project')
     click_on('add volunteers')
     click_on('Stink Removal')
     click_on('Delete project')

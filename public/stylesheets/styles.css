@@ -9,9 +9,9 @@ body {
   margin: 5em;
   color: rgba(11, 30, 51, 0.781);
   text-align: center;
-  padding: 1em;
-  width: 80%;
-  height: 100%;
+  padding: 3em;
+  width: 800px;
+  height: 600px;
 }
 #hands {
   width: 50%;
@@ -19,12 +19,22 @@ body {
 p {
   font-size: large;
 }
-/* .clickEdit {
-  font-size: small;
-} */
 ul {
   list-style-type: none;
 }
 h1, h2, h3, p, ul {
   background-color: rgba(248, 248, 247, .75);
+}
+#n {
+  width: 100%
+}
+#projectButton {
+  width: 100%;
+  margin-top: 125px;
+}
+#volunteerButton {
+  width: 100%;
+}
+#volunteerInput {
+  width: 100%;
 }

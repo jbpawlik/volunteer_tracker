@@ -17,7 +17,7 @@ describe 'the project creation path', {:type => :feature} do
     visit '/'
     click_on('add a new project')
     fill_in('project_title', :with => 'Teaching Kids to Code')
-    click_on('Add project')
+    click_on('Add Project')
     expect(page).to have_content('Teaching Kids to Code')
   end
 end
