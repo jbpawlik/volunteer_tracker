@@ -1,6 +1,6 @@
 body {
-  /* background-image: url('../images/library.jpg'); */
-  background-color: beige;
+
+  background-color: black;
   font-family: 'Poppins', sans-serif;
 }
 .container {
@@ -9,7 +9,7 @@ body {
   text-align: center;
   padding: 1em;
 }
-#word-nerds {
+#hands {
   width: 50%
 }
 p {
