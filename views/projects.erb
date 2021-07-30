@@ -6,7 +6,7 @@
 <% if @projects.any? %>
   <ul>
     <% @projects.each do |project| %>
-      <li><a href="/projects/<%= project.id %>"><%= project.title %></a></li>
+      <li><a href="/projects/<%= project.id %>">#<%= project.id %> - <%= project.title %></a></li>
     <% end %>
   </ul>
 <% else %>
@@ -15,15 +15,12 @@
 
 <p>Do you want to <a href="/projects/new">add a new project?</a></p>
 
-<h3>Assignments</h3>
+<h3>Volunteers Assigned:</h3>
 
 <% if @volunteers.any? %>
   <ul>
-    <% @projects.each do |project| %>
-      <li><a href="/projects/<%= project.id %>"><%= project.title %></a></li>
-    <% end %>
     <% @volunteers.each do |volunteer| %>
-      <li><a><%= volunteer.name %></a></li>
+      <li><a><%= volunteer.name %> - Project #<%= volunteer.project_id %></a></li>
     <% end %>
   </ul>
 <% else %>
