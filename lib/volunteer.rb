@@ -28,10 +28,25 @@ class Volunteer
     volunteers
   end
 
+  # def save
+  #   result = DB.exec("INSERT INTO volunteers (name, project_id) VALUES ('#{@name}', #{@project_id}) RETURNING id;")
+  #   @id = result.first().fetch("id").to_i
+  # end
+
   def save
-    result = DB.exec("INSERT INTO volunteers (name, project_id) VALUES ('#{@name}', #{@project_id}) RETURNING id;")
-    @id = result.first().fetch("id").to_i
+    saved_volunteers = DB.exec("SELECT * FROM volunteers;").values
+    sameName = false
+    saved_volunteers.each.with_index do |name, index|
+      if saved_volunteers[index][0].include?("#{name}")
+        sameName = true
+      end
+    end
+      if sameName != true
+        result = DB.exec("INSERT INTO volunteers (name, project_id) VALUES ('#{@name}', #{project_id}) RETURNING id;")
+        @id = result.first().fetch("id").to_i
+      end
   end
+
 
   def self.find(id)
     volunteer = DB.exec("SELECT * FROM volunteers WHERE id = #{id};").first
