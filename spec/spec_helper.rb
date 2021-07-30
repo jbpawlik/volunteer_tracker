@@ -1,3 +1,5 @@
+require 'simplecov'
+SimpleCov.start
 require "volunteer"
 require "project"
 require "rspec"
