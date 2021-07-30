@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-30T10:39:23-07:00">2021-07-30T10:39:23-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-30T10:47:16-07:00">2021-07-30T10:47:16-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>150</b> relevant lines,
-    <span class="green"><b>150</b> lines covered</span> and
+    <b>162</b> relevant lines,
+    <span class="green"><b>162</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -85,8 +85,8 @@
             <td class="strong t-file__name"><a href="#3fb864bac74fb474b2e1d79b26b89ce8672b95ea" class="src_link" title="spec/volunteer_integration_spec.rb">spec/volunteer_integration_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">69</td>
-            <td class="cell--number">34</td>
-            <td class="cell--number">34</td>
+            <td class="cell--number">46</td>
+            <td class="cell--number">46</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -1254,8 +1254,8 @@
     
 
     <div class="t-line-summary">
-      <b>34</b> relevant lines.
-      <span class="green"><b>34</b> lines covered</span> and
+      <b>46</b> relevant lines.
+      <span class="green"><b>46</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1872,134 +1872,134 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="56">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="56">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"># describe &#39;the volunteer detail page path&#39;, {:type =&gt; :feature} do</code>
+            
+
+            <code class="ruby">describe &#39;the volunteer detail page path&#39;, {:type =&gt; :feature} do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   it &#39;shows a volunteer detail page&#39; do</code>
+            
+
+            <code class="ruby">  it &#39;shows a volunteer detail page&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     test_project = Project.new({:title =&gt; &#39;Teaching Kids to Code&#39;, :id =&gt; nil})</code>
+            
+
+            <code class="ruby">    test_project = Project.new({:title =&gt; &#39;Teaching Kids to Code&#39;, :id =&gt; nil})</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     test_project.save</code>
+            
+
+            <code class="ruby">    test_project.save</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="60">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="60">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     project_id = test_project.id.to_i</code>
+            
+
+            <code class="ruby">    project_id = test_project.id.to_i</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="61">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     test_volunteer = Volunteer.new({:name =&gt; &#39;Jasmine&#39;, :project_id =&gt; project_id, :id =&gt; nil})</code>
+            
+
+            <code class="ruby">    test_volunteer = Volunteer.new({:name =&gt; &#39;Jasmine&#39;, :project_id =&gt; project_id, :id =&gt; nil})</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="62">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     test_volunteer.save</code>
+            
+
+            <code class="ruby">    test_volunteer.save</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="63">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     visit &quot;/projects/#{project_id}&quot;</code>
+            
+
+            <code class="ruby">    visit &quot;/projects/#{project_id}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     click_link(&#39;Jasmine&#39;)</code>
+            
+
+            <code class="ruby">    click_link(&#39;Jasmine&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="65">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     fill_in(&#39;name&#39;, :with =&gt; &#39;Jane&#39;)</code>
+            
+
+            <code class="ruby">    fill_in(&#39;name&#39;, :with =&gt; &#39;Jane&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     click_button(&#39;Update Volunteer&#39;)</code>
+            
+
+            <code class="ruby">    click_button(&#39;Update Volunteer&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="67">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     expect(page).to have_content(&#39;Jane&#39;)</code>
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;Jane&#39;)</code>
           </li>
         </div>
       
@@ -2010,7 +2010,7 @@
 
             
 
-            <code class="ruby">#   end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -2021,7 +2021,7 @@
 
             
 
-            <code class="ruby"># end</code>
+            <code class="ruby">end</code>
           </li>
         </div>
       
