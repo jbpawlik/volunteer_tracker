@@ -3,7 +3,7 @@
 <img src="../images/hands.jpeg" id="hands">
 <h3>Open Projects:</h3>
 
-<% if @projects.any? %>
+<h4><% if @projects.any? %>
   <ul>
     <% @projects.each do |project| %>
       <li>#<%= project.id %> - <%= project.title %><a href="/projects/<%= project.id %>"> (edit project or add volunteers)</a></li>
@@ -11,7 +11,7 @@
   </ul>
 <% else %>
   <p>There are no projects to display.</p>
-<% end %>
+<% end %></h4>
 
 <p>Do you want to <a href="/projects/new">add a new project?</a></p>
 

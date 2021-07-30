@@ -1,5 +1,6 @@
 body {
   background-image: url('../images/hands.jpeg');
+  background-size: 200% 200%;
   font-family: 'Poppins', sans-serif;
 }
 .container {
@@ -22,8 +23,8 @@ p {
 ul {
   list-style-type: none;
 }
-h1, h2, h3, p, ul {
-  background-color: rgba(248, 248, 247, .75);
+h1, h2, h3, h4, p, ul {
+  background-color: rgba(248, 248, 247, .70);
 }
 #n {
   width: 100%
@@ -31,10 +32,13 @@ h1, h2, h3, p, ul {
 #projectButton {
   width: 100%;
   margin-top: 125px;
+  background-color: rgba(248, 248, 247, .70);
 }
 #volunteerButton {
   width: 100%;
+  background-color: rgba(248, 248, 247, .7S0);
 }
 #volunteerInput {
   width: 100%;
+
 }
