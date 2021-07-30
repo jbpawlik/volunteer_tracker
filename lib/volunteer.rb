@@ -16,4 +16,16 @@ class Volunteer
     end
   end
 
+  def self.all
+    saved_volunteers = DB.exec("SELECT * FROM volunteers;")
+    volunteers = []
+    saved_volunteers.each() do |volunteer|
+      name = volunteer.fetch("name")
+      album_id = volunteer.fetch("project_id").to_i
+      id = volunteer.fetch("id").to_i
+      volunteers.push(Volunteer.new({:name => name, :project_id => project_id, :id => id}))
+    end
+    volunteers
+  end
+
 end
