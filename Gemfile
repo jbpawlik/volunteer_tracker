@@ -9,3 +9,4 @@ gem 'simplecov', require: false, group: :test
 gem 'thin'
 gem 'foreman'
 gem 'launchy'
+gem 'rake'
