@@ -68,5 +68,13 @@ describe Volunteer do
     end
   end
 
+  describe '#delete' do
+    it 'allows a user to delete a project' do
+      volunteer = Volunteer.new({:name => 'Spoony', :project_id => 1, :id => nil})
+      volunteer.save
+      volunteer.delete
+      expect(Volunteer.all).to eq []
+    end
+  end
 
 end
