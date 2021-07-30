@@ -36,7 +36,7 @@ class Volunteer
   def save
     saved_volunteers = DB.exec("SELECT * FROM volunteers;").values
     sameName = false
-    saved_volunteers.each.with_index do |name, index|
+    saved_volunteers.each.with_index do |element, index|
       if saved_volunteers[index][0].include?("#{name}")
         sameName = true
       end

@@ -15,7 +15,7 @@ class Project
   def save
     saved_projects = DB.exec("SELECT * FROM projects;").values
     sameTitle = false
-    saved_projects.each.with_index do |name, index|
+    saved_projects.each.with_index do |element, index|
       if saved_projects[index][0].include?("#{title}")
         sameTitle = true
       end
