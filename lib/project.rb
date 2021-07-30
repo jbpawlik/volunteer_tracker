@@ -13,12 +13,14 @@ class Project
   # end
 
   def save
-    if 
-      result = DB.exec("INSERT INTO projects (title) VALUES ('#{@title}') RETURNING id;")
-      @id = result.first().fetch("id").to_i
-    end
+    saved_projects = DB.exec("SELECT * FROM projects;").values
+    saved_projects.each do
+      unless saved_projects[0][0].include?("#{title}")
+        result = DB.exec("INSERT INTO projects (title) VALUES ('#{@title}') RETURNING id;")
+        @id = result.first().fetch("id").to_i
+      end
   end
-
+  end
 
   def ==(project_to_compare)
     self.title == project_to_compare.title
