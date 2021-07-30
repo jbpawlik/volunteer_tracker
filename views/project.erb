@@ -1,7 +1,8 @@
 <h2>PROJECT: <a href="/projects/<%= @project.id %>/edit"><%= @project.title %></a></h2>
 <br>
 <h2>Volunteers</h2>
-  <% if @project.volunteers.any? %>
+  
+  <h3><% if @project.volunteers.any? %>
     <ul>
       <% @project.volunteers.each do |volunteer| %>
         <li><a href="/projects/<%= @project.id %>/volunteers/<%= volunteer.id %>"><%= volunteer.name %></a></li>
@@ -9,7 +10,7 @@
     </ul>
   <% else %>
     <p>There are no volunteers listed for this project yet.</p>
-  <% end %>
+  <% end %></h3>
 <br>
 <form action="/projects/<%= @project.id %>/volunteers" method="post">
   <div class="form-group">
