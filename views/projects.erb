@@ -1,12 +1,12 @@
-<h1>Volunteer Tracker</h1>
-
+<h1>Free Enterprise</h1>
+<h2>Making the Most of the Generosity of Others</h2>
 <img src="../images/hands.jpeg" id="hands">
 <h3>Open Projects:</h3>
 
 <% if @projects.any? %>
   <ul>
     <% @projects.each do |project| %>
-      <li><a href="/projects/<%= project.id %>">#<%= project.id %> - <%= project.title %></a></li>
+      <li>#<%= project.id %> - <%= project.title %><a href="/projects/<%= project.id %>"> (add volunteers)</a></li>
     <% end %>
   </ul>
 <% else %>
@@ -26,3 +26,4 @@
 <% else %>
   <p>There are no assignments to display.</p>
 <% end %>
+
