@@ -10,4 +10,5 @@ gem 'thin'
 gem 'foreman'
 gem 'launchy'
 gem 'rake'
-gem 'github-pages'
+gem 'github-pages', group: :jekyll_plugins
+gem 'pg'
