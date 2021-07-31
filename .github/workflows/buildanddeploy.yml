@@ -17,4 +17,3 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: . # The folder the action should deploy.
-© 2021 GitHub, Inc.
