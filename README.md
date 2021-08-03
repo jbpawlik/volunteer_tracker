@@ -2,7 +2,7 @@
 
 ### by [James Benjamin Pawlik](http://github.com/jbpawlik)
 
-![Free Enterprise](./public/images/freeenterprise.png)
+![Free Enterprise](https://github.com/jbpawlik/volunteer_tracker/blob/gh-pages/public/images/freeenterprise.PNG?raw=true)
 
 ### __Description__
 Free Enterprise is a site that allows non-profits to manage their volunteers. A user can view, add, update, and delete both projects and volunteers, as well as assign volunteers to projects.
