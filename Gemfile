@@ -5,10 +5,10 @@ gem 'rspec'
 gem 'pry'
 gem 'sinatra-contrib'
 gem 'capybara'
-gem 'simplecov', require: false, group: :test
+gem 'simplecov'
 gem 'thin'
 gem 'foreman'
 gem 'launchy'
 gem 'rake'
-gem 'github-pages', group: :jekyll_plugins
+gem 'github-pages'
 gem 'pg'
