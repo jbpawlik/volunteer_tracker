@@ -23,7 +23,7 @@ Setup for this project assumes that you have Ruby installed on your personal com
 ### __Known Bugs / Future Goals__
 No bugs have been found or reported. Please contact the author if you experience poor performance.
 
-Future goals for __Word Nerds__:
+Future goals for __Free Enterprise__:
 1. Log volunteer hours worked
 2. Show volunteer profile
 3. Alert user if volunteer hours overlap
