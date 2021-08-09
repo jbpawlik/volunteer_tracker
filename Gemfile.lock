@@ -243,6 +243,7 @@ GEM
     multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.8)
     nokogiri (1.11.7-x64-mingw32)
       racc (~> 1.4)
     octokit (4.21.0)
@@ -255,6 +256,8 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.6)
+    puma (5.4.0)
+      nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
     rack-protection (2.1.0)
@@ -343,6 +346,7 @@ DEPENDENCIES
   launchy
   pg
   pry
+  puma
   rake
   rspec
   simplecov
